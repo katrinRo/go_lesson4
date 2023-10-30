@@ -7,6 +7,8 @@ func exercise1() {
 	a := s[2:4]
 	a[0] = 42
 	fmt.Println(s)
+	//s = [1,2,42,4,5]
+	//a = [42,4]
 }
 
 func exercise2() {
@@ -19,6 +21,8 @@ func exercise2() {
 
 	s = append(s, 4)
 	fmt.Println(s)
+	//s = [1, 2, 3, 4]
+	//скорее всего вывод будет таким, т.к. не передан указатель
 }
 
 func modifySlice(slice []int) {
@@ -34,6 +38,8 @@ func exercise3() {
 	s1[1] = 50
 	fmt.Println(s1)
 	fmt.Println(s2)
+	//s1 = [1, 50, 3, 4]
+	//s2 = [1, 2, 700]
 }
 
 func modifyData(data []int) []int {
@@ -56,6 +62,8 @@ func exercise4() {
 
 	fmt.Println(original)
 	fmt.Println(newSlice)
+	//original [10, 20, 30, 40]
+	//newSlice [10, 100]
 }
 
 func doubleSlice(slice []int) []int {
@@ -75,6 +83,7 @@ func exercise6() {
 	s[1] = 222
 	fmt.Println(s)
 	fmt.Println(res)
+	//s
 
 }
 
@@ -117,6 +126,7 @@ func main() {
 
 	fmt.Println("Упражнение 3:")
 	exercise3()
+	return
 
 	fmt.Println("Упражнение 4:")
 	exercise4()

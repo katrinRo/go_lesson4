@@ -19,13 +19,14 @@ func exercise1() {
 	// Простое упражнение 1
 	m1 := map[string]int{"one": 1, "two": 2, "three": 3}
 	fmt.Println(m1["one"])
-
+	// вывод: 1
 }
 
 func exercise2() {
 	// Простое упражнение 2
 	m2 := map[int]bool{}
 	fmt.Println(m2[2])
+	// false
 
 }
 
@@ -35,7 +36,7 @@ func exercise3() {
 	val := 5
 	m3["five"] = &val
 	fmt.Println(*m3["five"])
-
+	//5
 }
 
 func exercise4() {
@@ -43,7 +44,7 @@ func exercise4() {
 	m4 := map[int]string{1: "one", 2: "two", 3: "three"}
 	delete(m4, 2)
 	fmt.Println(len(m4))
-
+	//3
 }
 
 func exercise5() {
@@ -51,7 +52,7 @@ func exercise5() {
 	m5 := map[string]int{"a": 1, "b": 2, "c": 3}
 	val, exists := m5["d"]
 	fmt.Println(val, exists)
-
+	// nil, false
 }
 
 func exercise6() {
@@ -60,7 +61,7 @@ func exercise6() {
 	m6[1] = m6[1] + 1
 	m6[2] = m6[2] + 2
 	fmt.Println(m6)
-	// Ответ
+	// Ответ map[1:2, 2:4]
 }
 
 func exerciseHigh1() {

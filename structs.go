@@ -93,7 +93,7 @@ func structsBasic() {
 
 	// Удалить элемент
 	delete(set, "a")
-
+	return
 }
 
 type MyStruct struct {
@@ -139,7 +139,7 @@ func structsComparison() {
 	pe1 := PersonNonComparable{"foo", []string{"bar"}}
 	pe2 := PersonNonComparable{"foo", []string{"bar"}}
 	// person1 == person2 будет ошибкой компиляции
-	fmt.Println(pe1 == pe2) // ошибкой компиляции
+	fmt.Println(pe1, pe2) // ошибкой компиляции
 
 }
 

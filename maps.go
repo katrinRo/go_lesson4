@@ -78,10 +78,10 @@ func maps() {
 	fmt.Println("Copy map:", copyMap)
 
 	// 8. Изменяемость ключей:
-	invalidMap := map[[]int]string{} // Неверный код, так как срез не может быть ключом.
+	//invalidMap := map[[]int]string{} // Неверный код, так как срез не может быть ключом.
 
 	// 9. Инициализация с начальным размером:
-	largeMap := make(map[int]int, 1000)
+	//largeMap := make(map[int]int, 1000)
 
 	fmt.Println("End of demonstration.")
 }
